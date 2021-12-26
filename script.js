@@ -51,7 +51,6 @@ document.querySelector(".check").addEventListener("click", function () {
   // correct
   else if (guess === number) {
     document.querySelector(".message").textContent = "Correct Number🎉";
-    score++;
 
     document.querySelector(".score").textContent = score;
     document.querySelector(".number").textContent = number;
