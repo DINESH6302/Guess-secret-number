@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess secret number</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!--============= TOP ==============-->
+      <section class="top">
+        <button class="btn again">Try again!</button>
+        <p>(Between 1 to 10)</p>
+      </section>
+
+      <!--============= MIDDLE ==============-->
+      <section class="middle">
+        <h1>Guess Secret Number</h1>
+        <div class="number">?</div>
+        <hr />
+      </section>
+
+      <!--============= BOTTOM ==============-->
+      <section class="bottom">
+        <!--======== Input ========-->
+        <div class="input">
+          <input type="number" class="guess" min="1" max="10" />
+          <button class="btn check">Check</button>
+        </div>
+
+        <!--======== Details ========-->
+        <div class="score__details">
+          <p class="message">Start Guessing...</p>
+          <p class="label__score">
+            💫Chances:
+            <span class="score">10</span>
+          </p>
+          <p class="label__highscore">
+            🥇High Score:
+            <span class="highscore">0</span>
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
